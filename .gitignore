@@ -1,0 +1,13 @@
+# .gitignore
+
+venv/
+__pycache__/
+*.pyc
+*.log
+*.bin
+*.pt
+*.pdf
+*.npy
+*.pkl
+.cache/
+models/
