@@ -2,6 +2,7 @@ from llm_model import load_mistral_model
 from llm_model import load_flan_model
 from doc_loader import load_and_index_document
 from rag_chain import build_rag_chain
+from ui import langch_ui
 
 def chat():
     print("🔍 Loading model...")

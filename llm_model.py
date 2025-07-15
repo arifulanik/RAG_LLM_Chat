@@ -1,5 +1,5 @@
 import os
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline,AutoModelForSeq2SeqLM
 import torch
 
 #google/flan-t5-small
@@ -25,9 +25,6 @@ def load_mistral_model(model_id="TinyLlama/TinyLlama-1.1B-Chat-v1.0"):
     )
 
     return pipe
-
-from transformers import pipeline, AutoModelForSeq2SeqLM, AutoTokenizer
-import torch
 
 def load_flan_model(model_id="google/flan-t5-small"):
     model_id = "google/flan-t5-small"
